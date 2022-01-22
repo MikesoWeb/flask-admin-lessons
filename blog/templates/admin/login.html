@@ -1,0 +1,26 @@
+{% extends 'admin/master.html' %}
+
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<div class="d-flex flex-column align-items-center h-100 mt-5" id="header">
+
+    <h4 class="display-4">{{ legend }}</h4>
+    <div class="reg_form col-8">
+
+        <div class="form-group mt-5">
+            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Ваш пароль">
+        </div>
+
+
+        <button type="button" class="btn  col-auto  bg-info text-white">Войти</button>
+    </div>
+    </div>
+{% endblock body %}
+
+

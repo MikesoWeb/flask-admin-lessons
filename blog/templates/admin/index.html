@@ -1,0 +1,32 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+{% for post in posts %}
+
+<div class="container text-center col-10 mt-3 ">
+    <div class="card border-secondary col-12 ">
+        <section class="d-flex justify-content-start m-1 ">
+  {% for tag in post.tags %}
+            <div class="card border-info col-2 mt-1 bg-success text-white">
+
+                    {{ tag }}
+        </div>
+            {% endfor %}
+
+
+        </section>
+
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.text }}</p>
+            <div class="image p-2 ">
+                <img class='w-50' src="{{ image }}/{{ post.image_post }}" alt="foto">
+            </div>
+            <a href="#" class="btn btn-primary">Читать</a>
+        </div>
+
+    </div>
+</div>
+{% endfor %}
+
+{% endblock body %}

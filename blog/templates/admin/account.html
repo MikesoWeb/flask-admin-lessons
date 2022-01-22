@@ -1,0 +1,28 @@
+{% extends 'admin/index.html' %}
+
+
+{% block body %}
+
+<div class="row mt-5  border border-primary p-2">
+    {% for post in posts %}
+
+    <div class="col-1 bg-primary bg-primary">
+        {{ post.id }}
+    </div>
+
+    <div class="col-5">
+        {{ post.author }}
+    </div>
+
+    <div class="col-6">
+        {{ post.title }}
+    </div>
+
+    {% endfor %}
+</div>
+
+<a href="#"></a>
+
+{% endblock body %}
+
+
