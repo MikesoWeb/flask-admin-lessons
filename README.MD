@@ -22,7 +22,7 @@ admin = Admin(app, 'Mike do IT', base_template='admin/change_brand.html', index_
 
 1) Flask-Admin - что умеет на примере работы с ORM SQLAlchemy / смотрим официальную доку # 0 https://youtu.be/I0wg1f6dizA
 2) Flask-Admin - Создаем каркас проекта / админка на flask и пользовательские ModelView # 1 https://youtu.be/Ui3sE1gcJrA
-3) 
+3) Flask-Admin - работа с изображениями / вывод контента в views/ локализация приложения # 2 https://youtu.be/Xj5B6Lhw84Y
 
 Михаил Терехов 2021-2022
 
